@@ -1,0 +1,760 @@
+﻿@using Lacromis.VM
+@model GarbageCatagoryVm
+@{
+    ViewData["Title"] = "Home Page";
+}
+ <div class="stricky-header stricked-menu main-menu main-menu-three">
+            <div class="sticky-header__content"></div>
+    <!-- /.sticky-header__content -->
+        </div>
+        <!-- /.stricky-header -->
+        <!--Main Slider Start-->
+        <section class="main-slider main-slider-three">
+            <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": false,
+                "effect": "fade",
+                "pagination": {
+                "el": "#main-slider-pagination",
+                "type": "bullets",
+                "clickable": true
+                },
+                "navigation": {
+                "nextEl": "#main-slider__swiper-button-next",
+                "prevEl": "#main-slider__swiper-button-prev"
+                },
+                "autoplay": {
+                "delay": 5000
+                }}'>
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="main-slider-three-bg" style="background-image: url(https://img.freepik.com/free-vector/vector-3d-abstract-background-with-paper-cut-shapes-green-carving-art-paper-craft-landscape-with-gradient-fade-colors-minimalistic-design-layout-business-presentations-flyers-posters_1217-4485.jpg?w=1380&t=st=1669308480~exp=1669309080~hmac=5e75d33725f966e31fcc9db32a891eb67a5a62b31df0afd05b0a5244a0993a36);">
+                        </div>
+                        <!-- <div class="main-slider-three-bg-two"></div> -->
+                        <div class="main-slider-three-building"><img src="~/assets/images/resources/main-slider-three-building.png" alt=""></div>
+                        <div class="main-slider-three-car"><img src="~/assets/images/resources/main-slider-three-car.png" alt="" class="float-bob-y"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-7">
+                                    <div class="main-slider__content">
+                                        <h2>Etibarlı <br> və Əlverişli <br> Tullantı Xidmətləri</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- If we need navigation buttons -->
+
+            </div>
+        </section>
+        <!--Main Slider End-->
+        <!--Brand One Start-->
+
+        <section class="brand-one brand-three pt-3">
+            <div class="container-fluid">
+                <div class="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
+                    "0": {
+                        "spaceBetween": 30,
+                        "slidesPerView": 2
+                    },
+                    "375": {
+                        "spaceBetween": 30,
+                        "slidesPerView": 2
+                    },
+                    "575": {
+                        "spaceBetween": 30,
+                        "slidesPerView": 3
+                    },
+                    "767": {
+                        "spaceBetween": 50,
+                        "slidesPerView": 4
+                    },
+                    "991": {
+                        "spaceBetween": 50,
+                        "slidesPerView": 5
+                    },
+                    "1199": {
+                        "spaceBetween": 100,
+                        "slidesPerView": 5
+                    }
+                }}'>
+                    <div class="section-title text-center m-0 p-0">
+                        <h2 class="section-title__title mb-3">İş birliyi etdiyimiz şirkətlər</h2>
+                    </div>
+
+
+                    <div class="swiper-wrapper">
+                        <a  asp-action="Index" asp-controller="Metal" class="swiper-slide">
+                            <img style="border-radius:40px" src="~/assets/images/brand/images.png" alt="">
+                        </a>
+                        <!-- /.swiper-slide -->
+                      
+                        <!-- /.swiper-slide -->
+                <a asp-action="Basket" asp-controller="Metal" class="swiper-slide">
+                            <img src="~/assets/images/brand/brand-1-4.png" alt="">
+                        </a>
+                        <!-- /.swiper-slide -->
+                        <a href="#" class="swiper-slide">
+                            <img src="~/assets/images/brand/brand-1-5.png" alt="">
+                        </a>
+                        <!-- /.swiper-slide -->
+                        <a href="#" class="swiper-slide">
+                            <img src="~/assets/images/brand/brand-1-1.png" alt="">
+                        </a>
+                        <!-- /.swiper-slide -->
+                        <a href="#" class="swiper-slide">
+                            <img src="~/assets/images/brand/brand-1-2.png" alt="">
+                        </a>
+                        <!-- /.swiper-slide -->
+                        <a href="#" class="swiper-slide">
+                            <img src="~/assets/images/brand/brand-1-3.png" alt="">
+                        </a>
+                        <!-- /.swiper-slide -->
+                        <a href="#" class="swiper-slide">
+                            <img src="~/assets/images/brand/brand-1-4.png" alt="">
+                        </a>
+                        <!-- /.swiper-slide -->
+                        <a href="#" class="swiper-slide">
+                            <img src="~/assets/images/brand/brand-1-5.png" alt="">
+                        </a>
+                        <!-- /.swiper-slide -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Brand One End-->
+        <!--Services Two Start-->
+        <!--Services Two End-->
+        <!--Welcome Start-->
+        <section class="welcome" style="margin-top: 130px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="welcome__left">
+                            <div class="welcome__img-box wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
+                                <div class="welcome__img">
+                                    <img src="~/assets/images/resources/welcome-img-1.jpg" alt="">
+                                </div>
+                                <div class="welcome__icon">
+                                    <span class="icon-garbage"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="welcome__right">
+                            <div class="section-title text-left">
+                                <span class="section-title__tagline">
+                                    Tullantıların Götürülməsi Şirkətinə xoş
+                                    gəlmisiniz
+                                </span>
+                                <h2 class="section-title__title">Biz 2022-ci ildən bu sahədə çalışırıq</h2>
+                            </div>
+
+                            <p class="welcome__text-2">
+                                Ecobalance Tullantı Yığım xidməti- Azərbaycanda ilk dəfə fəaliyyət göstərən texnoloji platformadır. Biz 2022- ci ildən fəaliyyət başlamış, insanları tullantıların azaldılmasına və təkrar emalına təşviq edən,10-dan çox yenidən
+                                emal şirkətləri ilə iş birliyi yaradan elektron ticarət platformasıyıq. Biz keyfiyyətli iş, gözəl xidmət devizi ilə işləyirik.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Welcome End-->
+        <!--Why Choose Two Start-->
+        <section class="why-choose-two">
+            <div class="why-choose-two-bg" style="background-image: url(assets/images/backgrounds/why-choose-two-bg.jpg);"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="why-choose-two__left">
+                            <div class="section-title text-left">
+                                <span class="section-title__tagline">Bizi niyə seçməlisiniz?</span>
+                                <h2 class="section-title__title">
+                                    Sizi əmin edə bilərik ki,tullantılarınız doğru məkandadır.
+                                </h2>
+                            </div>
+                            <p class="why-choose-two__text">
+                                Ecobalance Tullantı Yığım xidməti- Azərbaycanda ilk dəfə fəaliyyət göstərən texnoloji platformadır. Biz 2022- ci ildən fəaliyyət başlamış, insanları tullantıların azaldılmasına və təkrar emalına təşviq edən,10-dan çox yenidən
+                                emal şirkətləri ilə iş birliyi yaradan elektron ticarət platformasıyıq. Biz keyfiyyətli iş, gözəl xidmət devizi ilə işləyirik.
+
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="why-choose-two__right">
+                            <ul class="list-unstyled why-choose-two__counter">
+                                <li class="why-choose-two__counter-single wow fadeInUp" data-wow-delay="100ms">
+                                    <div class="why-choose-two__counter-icon">
+                                        <span class="icon-waste"></span>
+                                    </div>
+                                    <div class="why-choose-two__counter-content">
+                                        <h2 class="odometer" data-count="4850">00</h2><span class="counter-two__plus">+</span>
+                                        <p class="why-choose-two__counter-text">Tullantılar yığılır və atılır </p>
+                                    </div>
+                                </li>
+                                <li class="why-choose-two__counter-single wow fadeInUp" data-wow-delay="200ms">
+                                    <div class="why-choose-two__counter-icon">
+                                        <span class="icon-success"></span>
+                                    </div>
+                                    <div class="why-choose-two__counter-content">
+                                        <h2 class="odometer" data-count="99.9">00</h2><span class="counter-two__plus">%</span>
+                                        <p class="why-choose-two__counter-text">Şirkətimiz uğurludur</p>
+                                    </div>
+                                </li>
+                                <li class="why-choose-two__counter-single wow fadeInUp" data-wow-delay="300ms">
+                                    <div class="why-choose-two__counter-icon">
+                                        <span class="icon-affection"></span>
+                                    </div>
+                                    <div class="why-choose-two__counter-content">
+                                        <h2 class="odometer" data-count="20660">00</h2><span class="counter-two__plus">+</span>
+                                        <p class="why-choose-two__counter-text">Məmnun və xoşbəxt insanlar</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Why Choose Two End-->
+        <!--Manage Waste Two Start-->
+        <section class="manage-waste manage-waste-two">
+            <div class="manage-waste-bg-box">
+                <div class="manage-waste-bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%" style="background-image: url(assets/images/backgrounds/manage-waste-bg.jpg);"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="manage-waste__inner">
+                            <h3 class="manage-waste__title">
+                                Tullantıları səmərəli istifadə edin <br> ətraf mühiti çirkləndirməyin
+                            </h3>
+                            <div class="manage-waste__btn-box">
+                                <a href="request-pickup.html" class="thm-btn manage-waste__btn-1">Sifariş edin</a>
+                                <a href="contact.html" class="thm-btn manage-waste__btn-2">Bizimlə əlaqə</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Manage Waste Two End-->
+        <!--Project Three Start-->
+        <section class="project-three">
+            <div class="container">
+                <div class="project-three__top">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-7">
+                            <div class="project-three__left">
+                                <div class="section-title text-left">
+                                    <span class="section-title__tagline">Tamamlanmış işlər</span>
+                                    <h2 class="section-title__title">Yaxın zamanda tamamlananlar</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="project-three__bottom">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+                            <!--Project Three Single-->
+                            <div class="project-three__single">
+                                <div class="project-three__img">
+                                    <img src="~/assets/images/resources/project-3-1.jpg" alt="">
+                                    <div class="project-three__content">
+                                        <div class="project-three__arrow">
+                                            <a href="project-details.html"><i class="fa fa-arrow-right"></i></a>
+                                        </div>
+                                        <p class="project-three__subtitle">EcoBalance</p>
+                                        <h3 class="project-three__title">
+                                            <a href="project-details.html">
+                                                Gündəlik
+                                                tullantılar
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
+                            <!--Project Three Single-->
+                            <div class="project-three__single">
+                                <div class="project-three__img">
+                                    <img src="~/assets/images/resources/project-3-2.jpg" alt="">
+                                    <div class="project-three__content">
+                                        <div class="project-three__arrow">
+                                            <a href="project-details.html"><i class="fa fa-arrow-right"></i></a>
+                                        </div>
+                                        <p class="project-three__subtitle">EcoBalance</p>
+                                        <h3 class="project-three__title">
+                                            <a href="project-details.html">
+                                                Ev
+                                                tullantıları
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
+                            <!--Project Three Single-->
+                            <div class="project-three__single">
+                                <div class="project-three__img">
+                                    <img src="~/assets/images/resources/project-3-3.jpg" alt="">
+                                    <div class="project-three__content">
+                                        <div class="project-three__arrow">
+                                            <a href="project-details.html"><i class="fa fa-arrow-right"></i></a>
+                                        </div>
+                                        <p class="project-three__subtitle">EcoBalance</p>
+                                        <h3 class="project-three__title">
+                                            <a href="project-details.html">
+                                                Tikinti
+                                                tullantıları
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Project Three End-->
+        <!--Pricing Start-->
+        <section class="pricing">
+            <div class="container">
+                <div class="section-title text-center">
+                    <span class="section-title__tagline">Our Pricing Plans</span>
+                    <h2 class="section-title__title">Offering Best Pricing</h2>
+                </div>
+                <div class="pricing__tab-box tabs-box">
+                    <ul class="tab-buttons clearfix list-unstyled">
+                        <li data-tab="#bagster" class="tab-btn"><span>Bagster</span></li>
+                        <li data-tab="#containers" class="tab-btn active-btn"><span>Containers</span></li>
+                        <li data-tab="#dumpster" class="tab-btn"><span>Dumpster</span></li>
+                    </ul>
+                    <div class="tabs-content">
+                        <!--tab-->
+                        <div class="tab" id="bagster">
+                            <div class="tabs-content__inner">
+                                <div class="pricing__tab-content-box">
+                                                                             @foreach (var item in ViewData["product"]  as List<Lacromis.Models.Garbage>)
+{
+                                    <div class="pricing__tab-content-single">
+                                        <div class="pricing__tab-content-left">
+                                            <div class="pricing__tab-content-img">
+                                                <img src="~/assets/images/icon/@item.ImgUrl" alt="">
+                                            </div>
+                                            <div class="pricing__tab-content">
+                                                <h3 class="pricing__tab-content-title">@item.Name</h3>
+                                                <ul class="list-unstyled pricing__tab-content-list">
+                                                    <li>Tutar: <span>1,300 lbs</span></li>
+                                                    <li>Qalınlıq: <span>4’ x 8’, ½” </span></li>
+                                                    <li>Ən yaxşı istifadə: <span></span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="pricing__tab-content-right">
+                                            <div class="pricing__tab-content-order">
+                                                <p class="pricing__tab-content-rate"><span>$</span>@item.Price</p>
+                                            <a asp-action="AddBasket" asp-controller="Home" asp-route-Id="@item.Id" class="thm-btn pricing__order-btn">indi sifaris et</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    }
+                             </div>
+                            </div>
+                        </div>
+                        <!--tab-->
+                        <div class="tab active-tab" id="containers">
+                            <div class="tabs-content__inner">
+                                <div class="pricing__tab-content-box">
+                                                                                                                 @foreach (var item in ViewData["product1"]  as List<Lacromis.Models.Garbage>)
+{
+                                    <div class="pricing__tab-content-single">
+                                        <div class="pricing__tab-content-left">
+                                            <div class="pricing__tab-content-img">
+                                                <img src="~/assets/images/icon/@item.ImgUrl" alt="">
+                                            </div>
+                                            <div class="pricing__tab-content">
+                                                <h3 class="pricing__tab-content-title">@item.Name</h3>
+                                                <ul class="list-unstyled pricing__tab-content-list">
+                                                    <li>Tutar: <span>1,300 lbs</span></li>
+                                                    <li>Qalınlıq: <span>4’ x 8’, ½” </span></li>
+                                                    <li>Ən yaxşı istifadə: <span></span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="pricing__tab-content-right">
+                                            <div class="pricing__tab-content-order">
+                                                <p class="pricing__tab-content-rate"><span>$</span>@item.Price</p>
+                                            <a asp-action="AddBasket" asp-controller="Home" asp-route-Id="@item.Id" class="thm-btn pricing__order-btn">indi sifaris et</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    }
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <!--tab-->
+                        <div class="tab " id="dumpster">
+                            <div class="tabs-content__inner">
+                                                                                                                                                 @foreach (var item in ViewData["product2"]  as List<Lacromis.Models.Garbage>)
+{
+
+                                <div class="pricing__tab-content-box">
+                                    <div class="pricing__tab-content-single">
+                                        <div class="pricing__tab-content-left">
+                                            <div class="pricing__tab-content-img">
+                                                <img src="~/assets/images/icon/@item.ImgUrl" alt="">
+                                            </div>
+                                            <div class="pricing__tab-content">
+                                                <h3 class="pricing__tab-content-title">
+                                                    @item.Name
+                                                </h3>
+                                                <ul class="list-unstyled pricing__tab-content-list">
+                                                    <li>Tutar: <span>1,300 lbs</span></li>
+                                                    <li>Qalınlıq: <span>15'0"L x 8'0"W x 2'0"H</span></li>
+                                                    <li>Ən yaxşı istifadə: <span>sizler ucun</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="pricing__tab-content-right">
+                                            <div class="pricing__tab-content-order">
+                                                <p class="pricing__tab-content-rate"><span>$</span>@item.Price</p>
+                                                <a asp-action="AddBasket" asp-controller="Home" asp-route-Id="@item.Id" class="thm-btn pricing__order-btn">indi sifaris et</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Pricing End-->
+        <!--Testimonial Three Start-->
+        <!--Testimonial Three End-->
+        <!--Team One Start-->
+        <section class="team-one">
+            <div class="container">
+                <div class="section-title text-center">
+                    <span class="section-title__tagline">Uğurun arxasındakı komanda</span>
+                    <h2 class="section-title__title">Komanda üzvləri</h2>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+                        <!--Team One Single-->
+                        <div class="team-one__sngle">
+                            <div class="team-one__img">
+                                <img src="~/assets/images/team/team-1-1.jpg" alt="">
+                                <div class="team-one__shape">
+                                    <img src="~/assets/images/shapes/team-one-shape.png" alt="">
+                                </div>
+                            </div>
+                            <div class="team-one__content">
+                                <p class="team-one__title">Mühasib</p>
+                                <h3 class="team-one__name">İbrahim Hüseynov</h3>
+                                <div class="team-one__social-box">
+                                    <div class="team-one__social">
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                    <div class="team-one__arrow">
+                                        <a href="staff-details.html"><i class="fa fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
+                        <!--Team One Single-->
+                        <div class="team-one__sngle">
+                            <div class="team-one__img">
+                                <img src="~/assets/images/team/industries-1-1.jpg" alt="">
+                                <div class="team-one__shape">
+                                    <img src="~/assets/images/shapes/team-one-shape.png" alt="">
+                                </div>
+                            </div>
+                            <div class="team-one__content">
+                                <p class="team-one__title">Qurucu</p>
+                                <h3 class="team-one__name">Elnur Hüseynov</h3>
+                                <div class="team-one__social-box">
+                                    <div class="team-one__social">
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                    <div class="team-one__arrow">
+                                        <a href="staff-details.html"><i class="fa fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
+                        <!--Team One Single-->
+                        <div class="team-one__sngle">
+                            <div class="team-one__img">
+                                <img src="~/assets/images/team/team-1-3.jpg" alt="">
+                                <div class="team-one__shape">
+                                    <img src="~/assets/images/shapes/team-one-shape.png" alt="">
+                                </div>
+                            </div>
+                            <div class="team-one__content">
+                                <p class="team-one__title">Baş köməkçi</p>
+                                <h3 class="team-one__name">Eyyub Qədirov</h3>
+                                <div class="team-one__social-box">
+                                    <div class="team-one__social">
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                    <div class="team-one__arrow">
+                                        <a href="staff-details.html"><i class="fa fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Team One End-->
+        <!--Working Process Start-->
+        <section class="working-process">
+            <div class="container">
+                <div class="section-title text-center">
+                    <span class="section-title__tagline">4 sadə addım</span>
+                    <h2 class="section-title__title">İş prosesimiz</h2>
+                </div>
+                <ul class="list-unstyled working-process__box">
+                    <li class="working-process__single">
+                        <div class="working-process__icon">
+                            <span class="icon-garbage-truck"></span>
+                            <div class="working-process__count"></div>
+                            <div class="working-process__shape">
+                                <img src="~/assets/images/shapes/working-process-shape.png" alt="">
+                            </div>
+                            <div class="working-process__-hover-shape">
+                                <img src="~/assets/images/shapes/working-process-hover-shape.png" alt="">
+                            </div>
+                            <div class="working-process__bg-box">
+                                <div class="working-process__bg" style="background-image: url(assets/images/backgrounds/working-process-bg.jpg);">
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="working-process__title"><a href="about.html">Götürmə</a></h3>
+                        <p class="working-process__text">
+                            Tullantının ünvandan gptürülməsi.
+                        </p>
+                    </li>
+                    <li class="working-process__single">
+                        <div class="working-process__icon">
+                            <span class="icon-garbage"></span>
+                            <div class="working-process__count"></div>
+                            <div class="working-process__shape">
+                                <img src="~/assets/images/shapes/working-process-shape.png" alt="">
+                            </div>
+                            <div class="working-process__-hover-shape">
+                                <img src="~/assets/images/shapes/working-process-hover-shape.png" alt="">
+                            </div>
+                            <div class="working-process__bg-box">
+                                <div class="working-process__bg" style="background-image: url(assets/images/backgrounds/working-process-bg.jpg);">
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="working-process__title"><a href="about.html">Çeşidləmə</a></h3>
+                        <p class="working-process__text">
+                            Tullantıların növlərə görə çeşidlənməsi.
+                        </p>
+                    </li>
+                    <li class="working-process__single">
+                        <div class="working-process__icon">
+                            <span class="icon-processing"></span>
+                            <div class="working-process__count"></div>
+                            <div class="working-process__shape">
+                                <img src="~/assets/images/shapes/working-process-shape.png" alt="">
+                            </div>
+                            <div class="working-process__-hover-shape">
+                                <img src="~/assets/images/shapes/working-process-hover-shape.png" alt="">
+                            </div>
+                            <div class="working-process__bg-box">
+                                <div class="working-process__bg" style="background-image: url(assets/images/backgrounds/working-process-bg.jpg);">
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="working-process__title"><a href="about.html">Emal</a></h3>
+                        <p class="working-process__text">
+                            Tullantıların geri emal olunması.
+                        </p>
+                    </li>
+                    <li class="working-process__single">
+                        <div class="working-process__icon">
+                            <span class="icon-garbage-truck"></span>
+                            <div class="working-process__count"></div>
+                            <div class="working-process__shape">
+                                <img src="~/assets/images/shapes/working-process-shape.png" alt="">
+                            </div>
+                            <div class="working-process__-hover-shape">
+                                <img src="~/assets/images/shapes/working-process-hover-shape.png" alt="">
+                            </div>
+                            <div class="working-process__bg-box">
+                                <div class="working-process__bg" style="background-image: url(assets/images/backgrounds/working-process-bg.jpg);">
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="working-process__title"><a href="about.html">Utilizasiya olunur</a></h3>
+                        <p class="working-process__text">
+                            Emal olunan tullantının utilizasiyası.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--Working Process End-->
+        <!--News Three Start-->
+        <section class="news-three">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="news-three__left">
+                            <div class="news-three__bg-box">
+                                <div class="news-three__bg" style="background-image: url(assets/images/backgrounds/news-three-bg.jpg);"></div>
+                            </div>
+                            <div class="section-title text-left">
+                                <span class="section-title__tagline">Nə baş verir</span>
+                                <h2 class="section-title__title">Ən Son İşlərimiz və Xəbərlər</h2>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-8">
+                        <div class="news-three__right">
+                            <div class="news-three__carousel owl-carousel owl-theme thm-owl__carousel" data-owl-options='{
+                                 "loop" : true,
+                                 "autoplay" : true,
+                                 "margin" : 30,
+                                 "nav" : true,
+                                 "dots" : false,
+                                 "smartSpeed" : 500,
+                                 "autoplayTimeout" : 10000,
+                                 "navText" : ["<span class=\"icon-right-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
+                                "responsive": {
+                                    "0": {
+                                        "items": 1
+                                    },
+                                    "768": {
+                                        "items": 1
+                                    },
+                                    "992": {
+                                        "items": 2
+                                    },
+                                    "1200": {
+                                        "items": 2.01
+                                    }
+                                }
+                            }'>
+                                <!--News One Single-->
+                                <div class="news-one__single">
+                                    <div class="news-one__img">
+                                        <img src="~/assets/images/blog/news-1-1.jpg" alt="">
+                                        <div class="news-one__date">
+                                            <p>20 Dec</p>
+                                        </div>
+                                        <a href="news-details.html">
+                                            <span class="news-one__plus"></span>
+                                        </a>
+                                    </div>
+                                    <div class="news-one__content">
+                                        <ul class="list-unstyled news-one__meta">
+                                            <li><a href="news-details.html"><i class="far fa-clock"></i> by Admin </a>
+                                            </li>
+                                            <li><span>/</span></li>
+                                            <li><a href="news-details.html"><i class="far fa-comments"></i> 2
+                                                    Comments</a>
+                                            </li>
+                                        </ul>
+                                        <h3 class="news-one__title"><a href="news-details.html">Waste Management
+                                                Container or Bin for my Home?</a></h3>
+                                        <div class="news-one__read-more">
+                                            <a href="news-details.html"><i class="fa fa-arrow-right"></i>Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--News One Single-->
+                                <div class="news-one__single">
+                                    <div class="news-one__img">
+                                        <img src="~/assets/images/blog/news-1-2.jpg" alt="">
+                                        <div class="news-one__date">
+                                            <p>20 Dec</p>
+                                        </div>
+                                        <a href="news-details.html">
+                                            <span class="news-one__plus"></span>
+                                        </a>
+                                    </div>
+                                    <div class="news-one__content">
+                                        <ul class="list-unstyled news-one__meta">
+                                            <li><a href="news-details.html"><i class="far fa-clock"></i> by Admin </a>
+                                            </li>
+                                            <li><span>/</span></li>
+                                            <li><a href="news-details.html"><i class="far fa-comments"></i> 2
+                                                    Comments</a>
+                                            </li>
+                                        </ul>
+                                        <h3 class="news-one__title"><a href="news-details.html">Leverage agile
+                                                frameworks to provide best service</a></h3>
+                                        <div class="news-one__read-more">
+                                            <a href="news-details.html"><i class="fa fa-arrow-right"></i>Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--News One Single-->
+                                <div class="news-one__single">
+                                    <div class="news-one__img">
+                                        <img src="~/assets/images/blog/news-1-3.jpg" alt="">
+                                        <div class="news-one__date">
+                                            <p>20 Dec</p>
+                                        </div>
+                                        <a href="news-details.html">
+                                            <span class="news-one__plus"></span>
+                                        </a>
+                                    </div>
+                                    <div class="news-one__content">
+                                        <ul class="list-unstyled news-one__meta">
+                                            <li><a href="news-details.html"><i class="far fa-clock"></i> by Admin </a>
+                                            </li>
+                                            <li><span>/</span></li>
+                                            <li><a href="news-details.html"><i class="far fa-comments"></i> 2
+                                                    Comments</a>
+                                            </li>
+                                        </ul>
+                                        <h3 class="news-one__title"><a href="news-details.html">Bring to the table
+                                                win-win survival strategis to identify</a></h3>
+                                        <div class="news-one__read-more">
+                                            <a href="news-details.html"><i class="fa fa-arrow-right"></i>Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--News Three End-->
